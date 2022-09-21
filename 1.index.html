@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mot de Passe</title>
+    <!-- On crée une feuille de style CSS non obligatoire mais la page est assez moche-->
+    <link rel="stylesheet" href="style.css">
+    <!-- Puisque l'on vas utiliser fontawesome, nous utilisons un script dans le header permettant d'appeler les icones simplement avec un nom de class-->
+    <script src="https://kit.fontawesome.com/c6843439cd.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Nous commençons par créer un div qui vas englober notre mot de passe (ce qui serait utile si l'on aurais une page entière ou pour styliser)-->
+    <div class="motDePasseChamp">
+        <form action="" method="post" class="mdpForm">
+            <!-- Nous créons un label for="" suivi d'un input type="password" afin de créer un champ de saisi pour l'utilisateur qui vas venir placer des astérix à la place du text, le label est içi par question d'accessibilité et afin de renseigner l'utilisateur-->
+            <label for="mdp" class="mdpLabel">Veuillez saisir un mot de passe !</label>
+            <input type="password" name="mdp" id="mdp" class="mdpChamp">
+            <!-- Nous utilisons des icônes provenant de fontawesome en utilisant une balise <i> suivi d'une classe spécifique pour chaque îcones-->
+            <!-- Nous attribuons un événement "onclick=''" à la balise i et l'assoçions à une fonction du dossier mdp.js afin que celle-ci s'éxécute lorsque l'on clique dessus-->
+            <i class="fa-regular fa-eye mdpChamp" id="mdpShow" onclick="maFonction()"></i>
+        </form>
+    </div>
+
+    <!-- Afin de se servir du code JS nous l'introduisons à l'aide d'une balise <script src="">-->
+    <script src="mdp.js"></script>
+</body>
+
+</html>

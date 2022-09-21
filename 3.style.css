@@ -1,0 +1,47 @@
+/*Ce fichier CSS n'étais absolument pas nécessaire mais me sert d'entraînement */
+html {
+    height: 100%;
+}
+
+body {
+    font-family: sans-serif;
+    background: linear-gradient(#172237, #28425f);
+}
+
+/* Changement de la police et de la couleur du fond en dégradé linéaire */
+
+.motDePasseChamp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    padding: 30px;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, .5);
+    border-radius: 25px;
+}
+
+/* On attribue içi la position du div qui vas contenir tous nos élément (champs de saisie, label, icones) dans une box
+    On veut que la box soit au milieu alors on change le top et le left, on attribue une taille pas trop grande au width et au padding car la box ne contiendras qu'un formulaire de 3 éléments
+    On se sert du transform: translate afin de recentrer la position de la box qui est trop décalée sur le côté
+    On utilise le rgba pour mettre un fond noir à demi transparent pour qu'il se confonde avec le background puis on arrondie les bords pour que la box ne paraîsse pas trop abrupte
+    */
+
+.mdpForm {
+    display: inline-block;
+    text-align: center;
+}
+
+/* On viendras aligner le text et mettre un display: inline-block afin que le champ de saisi et l'oeil soit sur la même ligne et qu'il n'y est pas de wrap*/
+
+.mdpLabel {
+    color: #fff;
+}
+
+/* Juste un changement de couleur du label en clair (histoire de lisibilité car possède un ratio de contraste trop faible)*/
+
+.fa-regular {
+    color: antiquewhite;
+}
+
+/* De même pour l'icone qui n'étais pas apparent*/
